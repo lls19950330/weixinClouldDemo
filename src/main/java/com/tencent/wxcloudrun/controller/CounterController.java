@@ -31,6 +31,10 @@ public class CounterController {
     this.logger = LoggerFactory.getLogger(CounterController.class);
   }
 
+  @PostMapping(value = "/api/test")
+  ApiResponse test(){
+    return ApiResponse.ok("lls test");
+  }
 
   /**
    * 获取当前计数
